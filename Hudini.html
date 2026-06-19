@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hudini Plumbing | Premium Plumbing & Home Services</title>
+
+    <meta name="description" content="The trusted, premium, rapid-response plumbing and home service experts. Offering emergency plumbing, residential plumbing services, and solar installations across Gauteng.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    fontFamily: {
+
+                        sans: ['Inter', 'sans-serif'],
+
+                    },
+
+                    colors: {
+
+                        brand: {
+
+                            navy: '#0B132B',       /* Deep Luxury Blue */
+
+                            blue: '#1C2541',       /* Secondary Blue */
+
+                            light: '#F8F9FA',      /* Premium Off-White */
+
+                            accent: '#3A506B',     /* Muted Blue Accent */
+
+                            red: '#C1121F',        /* Emergency Red */
+
+                            green: '#2A9D8F',      /* Trust / Eco Green */
+
+                            whatsapp: '#25D366',   /* Official WhatsApp Green */
+
+                        }
+
+                    },
+
+                    boxShadow: {
+
+                        'glass': '0 8px 32px 0 rgba(11, 19, 43, 0.08)',
+
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+
+                        'glow': '0 0 25px rgba(193, 18, 31, 0.4)',
+
+                        'glow-green': '0 0 25px rgba(42, 157, 143, 0.4)',
+
+                        'chat': '0 12px 40px rgba(11, 19, 43, 0.16)',
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <style>
+
+        /* Custom Premium CSS */
+
+        body {
+
+            -webkit-font-smoothing: antialiased;
+
+            -moz-osx-font-smoothing: grayscale;
+
+            background-color: #F8F9FA;
+
+        }
+
+        .glass-nav {
+
+            background: rgba(255, 255, 255, 0.85);
+
+            backdrop-filter: blur(12px);
+
+            -webkit-backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+        }
+
+        .glass-card {
+
+            background: rgba(255, 255, 255, 0.95);
+
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(255,255,255,0.2);
+
+        }
+
+        .glass-dark {
+
+            background: rgba(11, 19, 43, 0.6);
+
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255, 255, 255, 0.05);
+
+        }
+
+        /* Scroll Animations */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform: translateY(30px);
+
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+        }
+
+        .reveal.active {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+        /* Testimonial Carousel */
+
+        .carousel-container {
+
+            display: flex;
+
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+        }
+
+        /* Image Overlays */
+
+        .hero-overlay {
+
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.75) 0%, rgba(28, 37, 65, 0.45) 100%);
+
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+
+            width: 8px;
+
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+
+            background: #F8F9FA;
+
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+
+            background: #3A506B;
+
+            border-radius: 4px;
+
+        }
+
+        /* Elegant Hover Effects */
+
+        .hover-lift {
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        .hover-lift:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 20px 40px -15px rgba(11, 19, 43, 0.15);
+
+        }
+
+        /* Chat Widget Dynamic State styles */
+
+        #chat-window {
+
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+        }
+
+    </style>
+
+</head>
+
+<body class="text-gray-800 custom-scrollbar overflow-x-hidden selection:bg-brand-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-24 transition-all duration-300" id="nav-container">
+
+                <div class="flex-shrink-0 flex items-center cursor-pointer group" onclick="window.scrollTo(0,0)">
+
+                    <div class="w-12 h-12 bg-brand-navy text-white rounded-xl flex items-center justify-center mr-3 shadow-lg group-hover:bg-brand-blue transition-colors">
+
+                        <i class="fa-solid fa-droplet text-2xl"></i>
+
+                    </div>
+
+                    <span class="font-bold text-2xl tracking-tight text-brand-navy">Hudini<span class="text-brand-accent font-light">Plumbing</span></span>
+
+                </div>
+
+                <div class="hidden lg:flex space-x-8 items-center">
+
+                    <a href="#about" class="text-sm font-semibold text-gray-600 hover:text-brand-navy transition-colors">The Brand</a>
+
+                    <a href="#services" class="text-sm font-semibold text-gray-600 hover:text-brand-navy transition-colors">Expertise</a>
+
+                    <a href="#why-us" class="text-sm font-semibold text-gray-600 hover:text-brand-navy transition-colors">Why Us</a>
+
+                    <a href="#hudinis-work" class="text-sm font-semibold text-gray-600 hover:text-brand-navy transition-colors">Our Work</a>
+
+                    <a href="#reviews" class="text-sm font-semibold text-gray-600 hover:text-brand-navy transition-colors">Reputation</a>
+
+                    <div class="flex items-center space-x-5 border-l pl-8 border-gray-200">
+
+                        <div class="text-right">
+
+                            <p class="text-xs text-gray-500 font-bold uppercase tracking-widest">24/7 Rapid Dispatch</p>
+
+                            <a href="tel:0800 123 456" class="text-lg font-extrabold text-brand-navy hover:text-brand-red transition-colors">0800 123 456</a>
+
+                        </div>
+
+                        <a href="#contact" class="bg-brand-navy text-white px-7 py-3.5 rounded-full text-sm font-bold hover:bg-brand-blue shadow-lg shadow-brand-navy/20 transition-all transform hover:-translate-y-0.5">
+
+                            Book Service
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="lg:hidden flex items-center">
+
+                    <button id="mobile-menu-btn" class="text-gray-800 hover:text-brand-navy focus:outline-none p-2">
+
+                        <i class="fa-solid fa-bars text-3xl"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl origin-top transition-transform duration-300">
+
+            <div class="px-4 pt-2 pb-6 space-y-1">
+
+                <a href="#about" class="block px-3 py-4 text-base font-semibold text-gray-800 border-b border-gray-50">The Brand</a>
+
+                <a href="#services" class="block px-3 py-4 text-base font-semibold text-gray-800 border-b border-gray-50">Expertise</a>
+
+                <a href="#why-us" class="block px-3 py-4 text-base font-semibold text-gray-800 border-b border-gray-50">Why Us</a>
+
+                <a href="#hudinis-work" class="block px-3 py-4 text-base font-semibold text-gray-800 border-b border-gray-50">Our Work</a>
+
+                <a href="#reviews" class="block px-3 py-4 text-base font-semibold text-gray-800 border-b border-gray-50">Reputation</a>
+
+                <div class="mt-8 px-3 flex flex-col gap-4">
+
+                    <a href="tel:0800 123 456" class="w-full flex items-center justify-center bg-brand-red text-white px-4 py-4 rounded-xl font-bold shadow-glow">
+
+                        <i class="fa-solid fa-phone mr-2"></i> Call Dispatch Now
+
+                    </a>
+
+                    <a href="#contact" class="w-full flex items-center justify-center bg-brand-navy text-white px-4 py-4 rounded-xl font-bold shadow-lg">
+
+                        Request Estimate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-52 lg:pb-40 overflow-hidden min-h-[95vh] flex items-center">
+
+        <div class="absolute inset-0 z-0 overflow-hidden">
+
+            <video autoplay muted loop playsinline class="w-full h-full object-cover object-center">
+
+                <source src="hero1-video.mp4" type="video/mp4">
+
+            </video>
+
+            <div class="absolute inset-0 bg-black/22"></div>
+
+            <div class="absolute inset-0 hero-overlay"></div>
+
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-4xl reveal active">
+
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-sm font-semibold mb-8">
+
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-green mr-3 animate-pulse"></span>
+
+                    Now dispatching throughout Gauteng
+
+                </div>
+
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+
+                    When Plumbing Problems Strike, <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400">Hudini Makes Them Disappear.</span>
+
+                </h1>
+
+                <p class="text-xl lg:text-2xl text-gray-300 font-light leading-relaxed mb-10 max-w-2xl">
+
+                    The trusted, premium, rapid-response home service experts. Delivering white-glove workmanship and lasting peace of mind.
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+
+                    <a href="#contact" class="bg-brand-red hover:bg-red-700 text-white px-8 py-5 rounded-xl font-bold text-lg text-center transition-all shadow-glow flex items-center justify-center group">
+
+                        <i class="fa-solid fa-truck-fast mr-3 group-hover:translate-x-1 transition-transform"></i>
+
+                        Emergency Service
+
+                    </a>
+
+                    <a href="#contact" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-5 rounded-xl font-semibold text-lg text-center transition-all flex items-center justify-center">
+
+                        Request Estimate
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bg-white border-b border-gray-200 py-10 relative z-20 shadow-soft -mt-10 mx-4 lg:mx-auto max-w-7xl rounded-2xl reveal">
+
+        <div class="px-6 lg:px-10">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-100">
+
+                <div class="flex flex-col items-center text-center px-4">
+
+                    <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
+
+                        <i class="fa-solid fa-calendar-check text-xl text-brand-navy"></i>
+
+                    </div>
+
+                    <h3 class="font-bold text-gray-900 text-sm lg:text-base">15+ Years Experience</h3>
+
+                    <p class="text-xs text-gray-500 mt-1 font-medium">Established Authority</p>
+
+                </div>
+
+                <div class="flex flex-col items-center text-center px-4">
+
+                    <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
+
+                        <i class="fa-solid fa-shield-halved text-xl text-brand-navy"></i>
+
+                    </div>
+
+                    <h3 class="font-bold text-gray-900 text-sm lg:text-base">Licensed & Insured</h3>
+
+                    <p class="text-xs text-gray-500 mt-1 font-medium">Complete Protection</p>
+
+                </div>
+
+                <div class="flex flex-col items-center text-center px-4">
+
+                    <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
+
+                        <i class="fa-solid fa-bolt text-xl text-brand-red"></i>
+
+                    </div>
+
+                    <h3 class="font-bold text-gray-900 text-sm lg:text-base">Emergency Service</h3>
+
+                    <p class="text-xs text-gray-500 mt-1 font-medium">Rapid Arrival</p>
+
+                </div>
+
+                <div class="flex flex-col items-center text-center px-4">
+
+                    <div class="w-12 h-12 bg-brand-light rounded-full flex items-center justify-center mb-4">
+
+                        <i class="fa-solid fa-star text-xl text-brand-navy"></i>
+
+                    </div>
+
+                    <h3 class="font-bold text-gray-900 text-sm lg:text-base">Highly Rated Experts</h3>
+
+                    <p class="text-xs text-gray-500 mt-1 font-medium">Trusted Across Gauteng</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="py-24 lg:py-32 bg-brand-light">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+                <div class="relative reveal">
+
+                    <div class="absolute inset-0 bg-brand-accent rounded-3xl transform -translate-x-4 translate-y-4 opacity-20"></div>
+
+                    <img src="installers.jpg" alt="Professional Plumber Gauteng" class="relative rounded-3xl shadow-2xl object-cover h-[500px] lg:h-[650px] w-full" />
+
+                    <div class="absolute -bottom-8 -right-4 lg:-right-12 glass-card rounded-2xl p-6 shadow-glass max-w-xs">
+
+                        <div class="flex items-start space-x-4">
+
+                            <div class="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-white text-xl font-bold shrink-0 shadow-lg">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p class="font-bold text-brand-navy text-lg leading-tight mb-1">We Solve The Real Issue.</p>
+
+                                <p class="text-sm text-gray-600 font-medium">Never just a temporary symptom fix.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal">
+
+                    <h4 class="text-brand-accent font-extrabold tracking-widest uppercase text-sm mb-4 flex items-center">
+
+                        <span class="w-8 h-[2px] bg-brand-accent mr-4"></span> The Hudini Standard
+
+                    </h4>
+
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-brand-navy leading-tight mb-8">The Plumbers Families Keep For Life.</h2>
+
+                    <div class="prose prose-lg text-gray-600 mb-8">
+
+                        <p class="mb-6">
+
+                            Hudini Plumbing is <strong>NOT</strong> just another contractor. We are the premier home service authority that homeowners rely on when quality, speed, and absolute trust matter most.
+
+                        </p>
+
+                        <p>
+
+                            From immediate plumbing repair near me to sophisticated solar installations, our philosophy is simple: arrive fast, diagnose accurately, explain clearly without pressure, and execute flawlessly. We deliver a clean, stress-free experience.
+
+                        </p>
+
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 mb-10">
+
+                        <div class="flex items-start group">
+
+                            <div class="w-8 h-8 rounded-full bg-brand-navy/5 flex items-center justify-center mr-4 group-hover:bg-brand-navy transition-colors">
+
+                                <i class="fa-solid fa-comments text-brand-navy group-hover:text-white transition-colors text-sm"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-gray-900">Clear Explanations</h4>
+
+                                <p class="text-sm text-gray-500">No jargon, no pressure.</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start group">
+
+                            <div class="w-8 h-8 rounded-full bg-brand-navy/5 flex items-center justify-center mr-4 group-hover:bg-brand-navy transition-colors">
+
+                                <i class="fa-solid fa-broom text-brand-navy group-hover:text-white transition-colors text-sm"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-gray-900">Clean Workmanship</h4>
+
+                                <p class="text-sm text-gray-500">We respect your home.</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start group">
+
+                            <div class="w-8 h-8 rounded-full bg-brand-navy/5 flex items-center justify-center mr-4 group-hover:bg-brand-navy transition-colors">
+
+                                <i class="fa-solid fa-users text-brand-navy group-hover:text-white transition-colors text-sm"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-gray-900">Human Service</h4>
+
+                                <p class="text-sm text-gray-500">Friendly, accountable pros.</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start group">
+
+                            <div class="w-8 h-8 rounded-full bg-brand-navy/5 flex items-center justify-center mr-4 group-hover:bg-brand-navy transition-colors">
+
+                                <i class="fa-solid fa-microscope text-brand-navy group-hover:text-white transition-colors text-sm"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-gray-900">Expert Diagnosis</h4>
+
+                                <p class="text-sm text-gray-500">Skilled, accurate solutions.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#services" class="inline-flex items-center text-brand-navy font-bold hover:text-brand-accent transition-colors group text-lg border-b-2 border-brand-navy pb-1">
+
+                        Explore Our Expertise
+
+                        <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-2 transition-transform"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Auto Marquee Carousel - Work With The Best -->
+    <div class="relative overflow-hidden bg-[#0B132B] border-y-2 border-[#1a2a5e] py-5" style="border-top:3px solid #1C2541;border-bottom:3px solid #1C2541;">
+        <div class="marquee-track flex items-center gap-16 whitespace-nowrap" style="animation: marqueeScroll 28s linear infinite;">
+            <!-- Set 1 -->
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+        </div>
+    </div>
+    <style>
+        @keyframes marqueeScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-track { width: max-content; }
+    </style>
+
+    <section id="services" class="py-24 lg:py-32 bg-white relative">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+
+                <h4 class="text-brand-accent font-extrabold tracking-widest uppercase text-sm mb-4 justify-center flex items-center">
+
+                    <span class="w-8 h-[2px] bg-brand-accent mr-4"></span> Elite Offerings <span class="w-8 h-[2px] bg-brand-accent ml-4"></span>
+
+                </h4>
+
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-brand-navy mb-6">Precision Engineering for Your Home.</h2>
+
+                <p class="text-gray-500 text-lg lg:text-xl font-light">Comprehensive plumbing services Pretoria to Johannesburg. We handle your home's complex systems with architectural mastery.</p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                <div class="bg-brand-light rounded-3xl p-8 hover-lift border border-gray-100 group cursor-pointer reveal">
+
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-navy text-2xl mb-8 group-hover:scale-110 transition-transform duration-500">
+
+                        <i class="fa-solid fa-house-chimney-crack"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Residential Plumbing</h3>
+
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">Comprehensive repairs, leak detection, and maintenance to keep your home's lifeblood flowing perfectly. Top-tier plumbing repair Gauteng.</p>
+
+                    <span class="text-brand-navy font-bold text-sm group-hover:text-brand-accent flex items-center">
+
+                        Request Service <i class="fa-solid fa-arrow-right ml-2 text-xs transform group-hover:translate-x-1 transition-transform"></i>
+
+                    </span>
+
+                </div>
+
+                <div class="bg-brand-light rounded-3xl p-8 hover-lift border border-gray-100 group cursor-pointer reveal" style="transition-delay: 100ms;">
+
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-navy text-2xl mb-8 group-hover:scale-110 transition-transform duration-500">
+
+                        <i class="fa-solid fa-sink"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Plumbing Installations</h3>
+
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">Premium fixture installation, bathroom upgrades, and full system modernization executed with flawless professionalism.</p>
+
+                    <span class="text-brand-navy font-bold text-sm group-hover:text-brand-accent flex items-center">
+
+                        Request Estimate <i class="fa-solid fa-arrow-right ml-2 text-xs transform group-hover:translate-x-1 transition-transform"></i>
+
+                    </span>
+
+                </div>
+
+                <div class="bg-brand-light rounded-3xl p-8 hover-lift border border-gray-100 group cursor-pointer reveal" style="transition-delay: 200ms;">
+
+                    <div class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-brand-navy text-2xl mb-8 group-hover:scale-110 transition-transform duration-500">
+
+                        <i class="fa-solid fa-solar-panel"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Solar Installations</h3>
+
+                    <p class="text-gray-500 text-sm leading-relaxed mb-8">State-of-the-art solar water heating and efficiency systems. Green energy solutions built to last for the modern home.</p>
+
+                    <span class="text-brand-navy font-bold text-sm group-hover:text-brand-accent flex items-center">
+
+                        Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs transform group-hover:translate-x-1 transition-transform"></i>
+
+                    </span>
+
+                </div>
+
+                <div class="bg-brand-navy rounded-3xl p-8 shadow-2xl group cursor-pointer reveal relative overflow-hidden hover-lift" style="transition-delay: 300ms;">
+
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-brand-red rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+
+                    <div class="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 flex items-center justify-center text-brand-red text-2xl mb-8 group-hover:scale-110 transition-transform duration-500">
+
+                        <i class="fa-solid fa-truck-medical"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold text-white mb-4">Emergency Plumbing</h3>
+
+                    <p class="text-gray-300 text-sm leading-relaxed mb-8">24/7 rapid arrival. When disaster strikes, our fast-response dispatch is ready to stabilize and solve immediately.</p>
+
+                    <a href="tel:0800 123 456" class="text-white font-bold text-sm flex items-center hover:text-brand-red transition-colors z-10 relative">
+
+                        Call Dispatch Now <i class="fa-solid fa-phone ml-2 text-xs animate-bounce"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="why-us" class="py-24 bg-brand-navy text-white relative overflow-hidden">
+
+        <div class="absolute inset-0 opacity-5 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+
+                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">Engineered for Peace of Mind.</h2>
+
+                <p class="text-gray-400 text-lg">Our reputation isn't fabricated; it's built daily through rigorous adherence to our core operational strengths.</p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+
+                <div class="reveal">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="text-brand-red text-3xl mr-4"><i class="fa-solid fa-stopwatch"></i></div>
+
+                        <h3 class="text-xl font-bold">Fast Response</h3>
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Same day service, rapid arrival, and immediate scheduling. Speed is our major brand pillar because your emergency can't wait.</p>
+
+                </div>
+
+                <div class="reveal" style="transition-delay: 100ms;">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="text-brand-accent text-3xl mr-4"><i class="fa-solid fa-user-shield"></i></div>
+
+                        <h3 class="text-xl font-bold">Trusted Expertise</h3>
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Knowledgeable technicians delivering skilled workmanship. We provide professional explanations and accurate diagnosis every time.</p>
+
+                </div>
+
+                <div class="reveal" style="transition-delay: 200ms;">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="text-brand-green text-3xl mr-4"><i class="fa-solid fa-handshake"></i></div>
+
+                        <h3 class="text-xl font-bold">Human Service Experience</h3>
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Awesome communication and unmatched friendliness. Real people, real experts, and real accountability. You are treated like family.</p>
+
+                </div>
+
+                <div class="reveal">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="text-blue-400 text-3xl mr-4"><i class="fa-solid fa-heart-circle-check"></i></div>
+
+                        <h3 class="text-xl font-bold">Long-Term Trust</h3>
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Loyal for years. Our clients are repeat customers who highly recommend us for ongoing home projects. We are your partner for life.</p>
+
+                </div>
+
+                <div class="reveal" style="transition-delay: 100ms;">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="text-gray-300 text-3xl mr-4"><i class="fa-solid fa-sparkles"></i></div>
+
+                        <h3 class="text-xl font-bold">Clean, Stress-Free</h3>
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">Smooth processes, no pressure, and pristine clean-ups. We reduce homeowner anxiety by treating your property with absolute respect.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="hudinis-work" class="py-24 lg:py-32 bg-white relative overflow-hidden">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-stretch">
+
+                <div class="relative reveal group rounded-3xl overflow-hidden shadow-2xl border border-gray-200 cursor-pointer transition-shadow duration-500 hover:shadow-xl" style="min-height: 420px;">
+
+                    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover object-center">
+
+                        <source src="hero-video.mp4" type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <div class="reveal flex flex-col justify-center">
+
+                    <h4 class="text-brand-green font-extrabold tracking-widest uppercase text-sm mb-4 flex items-center">
+
+                        <span class="w-8 h-[2px] bg-brand-green mr-4"></span> The Promise
+
+                    </h4>
+
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-brand-navy leading-tight mb-8">Hudini’s Work.</h2>
+
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6 font-light">
+
+                        Excellence isn’t an accident; it’s a standard engineered into every pipeline, every fixture, and every solar grid we touch. The Hudini promise was forged from a simple belief: your home’s infrastructure deserves industrial-grade precision delivered with white-glove luxury.
+
+                    </p>
+
+                    <p class="text-gray-500 text-base leading-relaxed mb-8 font-light">
+
+                        We don’t just fix problems—we future-proof your living spaces. By combining cutting-edge diagnostic technology with old-school craftsmanship, our team commits to leaving every site flawless. When you see the Hudini seal, you know it’s built to last.
+
+                    </p>
+
+                    <div class="flex items-center space-x-4">
+
+                        <div class="w-12 h-12 rounded-full border border-brand-green/40 flex items-center justify-center text-brand-green bg-brand-green/5">
+
+                            <i class="fa-solid fa-medal"></i>
+
+                        </div>
+
+                        <p class="text-sm font-bold text-brand-navy uppercase tracking-widest">Master Craftsmanship Guarantee</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="py-24 lg:py-32 bg-brand-navy relative border-t border-white/10">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+
+                <h4 class="text-brand-green font-extrabold tracking-widest uppercase text-sm mb-4 justify-center flex items-center">
+
+                    <span class="w-8 h-[2px] bg-brand-green mr-4"></span> Our Craft In Action <span class="w-8 h-[2px] bg-brand-green ml-4"></span>
+
+                </h4>
+
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-white mb-6">Visual Proof of Excellence.</h2>
+
+                <p class="text-gray-400 text-lg font-light">A curated look at our premium installations, structural repairs, and modern home infrastructure upgrades across Gauteng.</p>
+
+            </div>
+
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="1.0.jpg" alt="Solar Pannels Installation" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Johannesburg</p>
+
+                            <p class="text-white font-bold text-lg">Solar Pannels Installation</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="2.0.jpg" alt="Emergency Plumbing Work" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Pretoria</p>
+
+                            <p class="text-white font-bold text-lg">Burst Pipe Resolution</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="3.0.jpg" alt="Resedential Plumbing Project" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Helderwyk</p>
+
+                            <p class="text-white font-bold text-lg">Plumbing Project</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="4.0.jpg" alt="Solar Geyser Installation" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Brynston</p>
+
+                            <p class="text-white font-bold text-lg">Solar Geyser Installation</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="5.0.jpg" alt="Boiler Installation" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Krugersdorp</p>
+
+                            <p class="text-white font-bold text-lg">Boiler Installation</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal group relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-navy border border-white/5 shadow-glass cursor-pointer" style="transition-delay: 200ms;">
+
+    
+
+                    <img src="6.0.jpg" alt="Family Plumbing Project" class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-700 group-hover:scale-110">
+
+                    
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0B132B]/90 via-[#0B132B]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 z-10">
+
+                        <div>
+
+                            <p class="text-brand-green text-xs font-bold uppercase tracking-widest mb-1">Melrose</p>
+
+                            <p class="text-white font-bold text-lg">Solar Power Project</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+    </section>
+
+    <section id="reviews" class="py-24 lg:py-32 bg-brand-light overflow-hidden relative">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+
+                <div class="max-w-2xl">
+
+                    <h4 class="text-brand-accent font-extrabold tracking-widest uppercase text-sm mb-4 flex items-center">
+
+                        <span class="w-8 h-[2px] bg-brand-accent mr-4"></span> Customer Proof
+
+                    </h4>
+
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-brand-navy leading-tight">What Our Community Says.</h2>
+
+                </div>
+
+                <div class="mt-8 md:mt-0 flex space-x-3">
+
+                    <button id="prevBtn" class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-colors focus:outline-none">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </button>
+
+                    <button id="nextBtn" class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-brand-navy hover:bg-brand-navy hover:text-white transition-colors focus:outline-none">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="relative w-full overflow-hidden reveal pb-8">
+
+                <div class="carousel-container gap-6 md:gap-8" id="testimonialCarousel">
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-sm mb-6">
+
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <h4 class="font-bold text-gray-900 text-lg mb-3">"Lifesavers. Rapid Arrival."</h4>
+
+                            <p class="text-gray-600 text-sm leading-relaxed italic mb-8">"Called them at 10 PM for a busted pipe. The office staff was incredibly responsive, and they arrived in under an hour. Best emergency plumber Krugersdorp has to offer. Solved the issue immediately without making a mess."</p>
+
+                        </div>
+
+                        <div class="flex items-center border-t border-gray-50 pt-6">
+
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-500">MR</div>
+
+                            <div class="ml-4">
+
+                                <p class="text-sm font-bold text-brand-navy">Michael R.</p>
+
+                                <p class="text-xs text-gray-500">Krugersdorp</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-sm mb-6">
+
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <h4 class="font-bold text-gray-900 text-lg mb-3">"My Plumber for Life."</h4>
+
+                            <p class="text-gray-600 text-sm leading-relaxed italic mb-8">"Loyal customer for years. Hudini is the only company I trust for plumbing services Johannesburg. Awesome communication, no pressure sales tactics, and they always explain exactly what they're doing. Highly recommend."</p>
+
+                        </div>
+
+                        <div class="flex items-center border-t border-gray-50 pt-6">
+
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-500">SJ</div>
+
+                            <div class="ml-4">
+
+                                <p class="text-sm font-bold text-brand-navy">Sarah J.</p>
+
+                                <p class="text-xs text-gray-500">Johannesburg</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-sm mb-6">
+
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <h4 class="font-bold text-gray-900 text-lg mb-3">"Flawless Workmanship."</h4>
+
+                            <p class="text-gray-600 text-sm leading-relaxed italic mb-8">"If you need a plumber in Sandton, Gauteng, look no further. Replaced our entire system and updated fixtures. The knowledgeable technicians were incredible. Clean, professional, and the end result is perfect."</p>
+
+                        </div>
+
+                        <div class="flex items-center border-t border-gray-50 pt-6">
+
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-500">DT</div>
+
+                            <div class="ml-4">
+
+                                <p class="text-sm font-bold text-brand-navy">David T.</p>
+
+                                <p class="text-xs text-gray-500">Sandton, Gauteng</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-sm mb-6">
+
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <h4 class="font-bold text-gray-900 text-lg mb-3">"Accurate Diagnosis."</h4>
+
+                            <p class="text-gray-600 text-sm leading-relaxed italic mb-8">"Three other plumbers couldn't find the leak. Hudini found it in 15 minutes. They didn't just treat the symptom, they solved the real issue. The best plumbing services Pretoria has seen. Real experts."</p>
+
+                        </div>
+
+                        <div class="flex items-center border-t border-gray-50 pt-6">
+
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-500">KW</div>
+
+                            <div class="ml-4">
+
+                                <p class="text-sm font-bold text-brand-navy">Karen W.</p>
+
+                                <p class="text-xs text-gray-500">Pretoria</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="min-w-[100%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] bg-white p-8 lg:p-10 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-sm mb-6">
+
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <h4 class="font-bold text-gray-900 text-lg mb-3">"Unmatched Professionalism."</h4>
+
+                            <p class="text-gray-600 text-sm leading-relaxed italic mb-8">"Searching for plumbing repair near me was stressful until I found Hudini. The team is fantastic. Respectful technicians who wore shoe covers and communicated clearly. Smooth process from start to finish."</p>
+
+                        </div>
+
+                        <div class="flex items-center border-t border-gray-50 pt-6">
+
+                            <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center font-bold text-gray-500">PL</div>
+
+                            <div class="ml-4">
+
+                                <p class="text-sm font-bold text-brand-navy">Paul L.</p>
+
+                                <p class="text-xs text-gray-500">Gauteng</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-20 lg:py-28 bg-gradient-to-br from-brand-blue to-blue-900 relative overflow-hidden">
+
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80')] opacity-10 object-cover mix-blend-overlay"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center reveal">
+
+            <div class="inline-block w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white text-3xl mb-8 mx-auto animate-pulse">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+            </div>
+
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">Plumbing Emergency? Stop the Damage Now.</h2>
+
+            <p class="text-red-100 text-lg lg:text-xl mb-10 max-w-2xl mx-auto font-medium">Our master technicians are on standby across Gauteng. Fast response. Expert diagnosis. Immediate resolution.</p>
+
+            <a href="tel:0800 123 456" class="inline-flex items-center bg-white text-brand-blue px-10 py-5 rounded-full font-extrabold text-lg shadow-2xl hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300">
+
+                <i class="fa-solid fa-phone-volume mr-3 text-2xl animate-bounce"></i> Call Dispatch: 0800 123 456
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="py-24 lg:py-32 bg-white border-t border-gray-100">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+                <div class="reveal order-2 lg:order-1">
+
+                    <h4 class="text-brand-accent font-extrabold tracking-widest uppercase text-sm mb-4 flex items-center">
+
+                        <span class="w-8 h-[2px] bg-brand-accent mr-4"></span> The Faces of Trust
+
+                    </h4>
+
+                    <h2 class="text-4xl font-extrabold text-brand-navy mb-6">Real Experts.<br>Real Accountability.</h2>
+
+                    <p class="text-gray-600 mb-10 leading-relaxed text-lg font-light">
+
+                        When you invite a contractor into your home, you deserve peace of mind. Our team consists of highly vetted, continuously trained, and exceptionally respectful professionals. We wear shoe covers, we protect your floors, and we communicate every step of the way.
+
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4">
+
+                        <div class="group relative overflow-hidden rounded-2xl">
+
+                            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80" alt="Master Plumber" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 to-transparent flex items-end p-4">
+
+                                <p class="font-bold text-sm text-white">Vetted Techs</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="group relative overflow-hidden rounded-2xl">
+
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" alt="Friendly Office Staff" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 to-transparent flex items-end p-4">
+
+                                <p class="font-bold text-sm text-white">Friendly Staff</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="group relative overflow-hidden rounded-2xl">
+
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80" alt="Clean Workmanship" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/90 to-transparent flex items-end p-4">
+
+                                <p class="font-bold text-sm text-white">Clean Work</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-brand-light rounded-3xl p-10 lg:p-14 border border-gray-100 reveal order-1 lg:order-2 shadow-soft relative overflow-hidden">
+
+                    <div class="absolute -right-10 -top-10 text-9xl text-brand-navy opacity-5">
+
+                        <i class="fa-solid fa-map-location-dot"></i>
+
+                    </div>
+
+                    <div class="flex items-center mb-8 relative z-10">
+
+                        <div class="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center text-brand-navy text-2xl mr-5">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <h3 class="text-3xl font-extrabold text-brand-navy">Local Authority</h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-10 text-base leading-relaxed relative z-10 font-light">
+
+                        We are proud to serve families and businesses across the province. Because we are local, we guarantee rapid response times when you need us most.
+
+                    </p>
+
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-4 text-base text-gray-800 font-semibold relative z-10">
+
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-brand-green mr-3 text-lg"></i> Sandton, Gauteng</li>
+
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-brand-green mr-3 text-lg"></i> Krugersdorp</li>
+
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-brand-green mr-3 text-lg"></i> Pretoria</li>
+
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-brand-green mr-3 text-lg"></i> Johannesburg</li>
+
+                        <li class="flex items-center sm:col-span-2 pt-2"><i class="fa-solid fa-map text-brand-accent mr-3 text-lg"></i> All Surrounding Gauteng Areas</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Auto Marquee Carousel - Work With The Best -->
+    <div class="relative overflow-hidden bg-[#0B132B]" style="border-top:3px solid #1C2541;border-bottom:3px solid #1C2541;padding-top:1.25rem;padding-bottom:1.25rem;">
+        <div class="marquee-track flex items-center gap-16 whitespace-nowrap" style="animation: marqueeScroll 28s linear infinite;">
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <div class="flex items-center gap-4 shrink-0">
+                <div class="w-10 h-10 bg-[#1C2541] rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                    <i class="fa-solid fa-droplet text-blue-300 text-lg"></i>
+                </div>
+                <span class="font-extrabold text-white uppercase tracking-[0.18em] text-base">Hudini<span class="text-blue-300 font-light">Plumbing</span></span>
+            </div>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+            <span class="font-semibold text-white/80 uppercase tracking-widest text-sm shrink-0">Work With The Best In The Industry</span>
+            <span class="text-blue-300/60 text-2xl shrink-0">✦</span>
+        </div>
+    </div>
+
+    <section class="py-24 lg:py-32 bg-brand-light border-t border-gray-200">
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+
+            <div class="text-center mb-16">
+
+                <h4 class="text-brand-accent font-extrabold tracking-widest uppercase text-sm mb-4">Clarity & Transparency</h4>
+
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-brand-navy mb-6">Homeowner Questions, Answered.</h2>
+
+                <p class="text-gray-500 text-lg font-light">Intelligent information to help you make the best decision for your home's infrastructure.</p>
+
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden faq-item transition-all duration-300">
+
+                    <button class="w-full px-8 py-6 text-left font-bold text-brand-navy text-lg flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+
+                        Do you offer same-day emergency service?
+
+                        <i class="fa-solid fa-plus text-brand-accent transition-transform duration-300"></i>
+
+                    </button>
+
+                    <div class="px-8 pb-6 text-gray-600 text-base hidden faq-content leading-relaxed font-light border-t border-gray-100 pt-4">
+
+                        Yes. We pride ourselves on rapid response. For plumbing emergencies in Sandton, Krugersdorp, or anywhere in Gauteng, we prioritize immediate scheduling to stabilize the issue and prevent further damage to your home. Speed is our major brand pillar.
+
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden faq-item transition-all duration-300">
+
+                    <button class="w-full px-8 py-6 text-left font-bold text-brand-navy text-lg flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+
+                        Are your technicians licensed and insured?
+
+                        <i class="fa-solid fa-plus text-brand-accent transition-transform duration-300"></i>
+
+                    </button>
+
+                    <div class="px-8 pb-6 text-gray-600 text-base hidden faq-content leading-relaxed font-light border-t border-gray-100 pt-4">
+
+                        Absolutely. Hudini Plumbing is fully licensed and insured. Our master technicians undergo rigorous training and background checks to ensure professional, code-compliant workmanship that guarantees your peace of mind.
+
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden faq-item transition-all duration-300">
+
+                    <button class="w-full px-8 py-6 text-left font-bold text-brand-navy text-lg flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+
+                        Do you handle solar installations?
+
+                        <i class="fa-solid fa-plus text-brand-accent transition-transform duration-300"></i>
+
+                    </button>
+
+                    <div class="px-8 pb-6 text-gray-600 text-base hidden faq-content leading-relaxed font-light border-t border-gray-100 pt-4">
+
+                        Yes, we are experts in modernizing home utility systems. We provide premium solar installations, particularly solar water heating systems, designed for maximum efficiency and long-term cost savings.
+
+                    </div>
+
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden faq-item transition-all duration-300">
+
+                    <button class="w-full px-8 py-6 text-left font-bold text-brand-navy text-lg flex justify-between items-center focus:outline-none hover:bg-gray-50 transition-colors">
+
+                        Will you leave my home clean after the repair?
+
+                        <i class="fa-solid fa-plus text-brand-accent transition-transform duration-300"></i>
+
+                    </button>
+
+                    <div class="px-8 pb-6 text-gray-600 text-base hidden faq-content leading-relaxed font-light border-t border-gray-100 pt-4">
+
+                        Clean workmanship is a core pillar of our brand. We use drop cloths, wear shoe covers, and thoroughly clean the work area before we leave. We treat your property with absolute respect, reducing the stress of home repairs.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="py-24 lg:py-32 bg-white">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="bg-brand-navy rounded-[2.5rem] overflow-hidden shadow-2xl reveal relative">
+
+                <div class="absolute top-0 right-0 w-96 h-96 bg-brand-accent rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+
+                <div class="grid lg:grid-cols-5 h-full relative z-10">
+
+                    <div class="lg:col-span-2 p-10 lg:p-16 text-white flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10 bg-brand-navy/50 backdrop-blur-sm">
+
+                        <div>
+
+                            <h3 class="text-3xl lg:text-4xl font-extrabold mb-6 leading-tight">Request White-Glove Service.</h3>
+
+                            <p class="text-gray-300 mb-12 text-base leading-relaxed font-light">Fill out the form, and our responsive office staff will contact you immediately to schedule your consultation or emergency service visit.</p>
+
+                            <div class="space-y-8">
+
+                                <div class="flex items-center group">
+
+                                    <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mr-5 group-hover:bg-brand-accent transition-colors">
+
+                                        <i class="fa-solid fa-phone text-white text-xl"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-1">Call Dispatch 24/7</p>
+
+                                        <p class="font-extrabold text-xl">0800 123 456</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="flex items-center group">
+
+                                    <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mr-5 group-hover:bg-brand-accent transition-colors">
+
+                                        <i class="fa-solid fa-envelope text-white text-xl"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-1">Email Us</p>
+
+                                        <p class="font-bold text-lg">service@hudini.co.za</p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="flex items-center group">
+
+                                    <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mr-5 group-hover:bg-brand-accent transition-colors">
+
+                                        <i class="fa-solid fa-location-dot text-white text-xl"></i>
+
+                                    </div>
+
+                                    <div>
+
+                                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-1">Service Area</p>
+
+                                        <p class="font-bold text-lg">Gauteng Region</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lg:col-span-3 bg-white p-10 lg:p-16">
+
+                        <form id="quoteForm" class="space-y-6">
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                                <div>
+
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+
+                                    <input type="text" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none transition-all bg-brand-light focus:bg-white text-gray-800" placeholder="John Doe" required>
+
+                                </div>
+
+                                <div>
+
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+
+                                    <input type="tel" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none transition-all bg-brand-light focus:bg-white text-gray-800" placeholder="082 000 0000" required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                                <div>
+
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+
+                                    <input type="email" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none transition-all bg-brand-light focus:bg-white text-gray-800" placeholder="john@example.com">
+
+                                </div>
+
+                                <div>
+
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Service Needed</label>
+
+                                    <select class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none transition-all bg-brand-light focus:bg-white text-gray-600 appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[position:right_1.2rem_center] bg-[length:0.7rem]">
+
+                                        <option>Plumbing Repair</option>
+
+                                        <option>Emergency Service</option>
+
+                                        <option>Water Heater Installation</option>
+
+                                        <option>Solar Installation</option>
+
+                                        <option>Fixture Installation</option>
+
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <label class="block text-sm font-bold text-gray-700 mb-2">How can we help?</label>
+
+                                <textarea rows="4" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none transition-all bg-brand-light focus:bg-white resize-none text-gray-800" placeholder="Briefly describe your issue or project..."></textarea>
+
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-navy hover:bg-brand-blue text-white font-extrabold text-lg py-5 rounded-xl shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl">
+
+                                Request Estimate
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="w-full bg-brand-light py-2 reveal">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+
+            <div class="flex items-center space-x-3">
+
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-red animate-pulse"></span>
+
+                <p class="text-xs uppercase tracking-widest font-bold text-gray-500">Live Infrastructure & Dispatch Network</p>
+
+            </div>
+
+        </div>
+
+        <div class="w-full h-[450px] relative shadow-inner overflow-hidden border-t border-b border-gray-200">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d458347.1235478961!2d28.047305!3d-26.204103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza&maptype=satellite" class="absolute inset-0 w-full h-full border-0 grayscale-[15%] contrast-[110%]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="absolute bottom-6 left-6 lg:left-12 glass-card rounded-2xl p-5 shadow-glass max-w-sm hidden sm:block">
+
+                <div class="flex items-center space-x-4">
+
+                    <div class="w-10 h-10 bg-brand-navy text-white rounded-xl flex items-center justify-center shadow-md">
+
+                        <i class="fa-solid fa-satellite text-sm"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-brand-navy text-sm">Gauteng Coverage Area</h4>
+
+                        <p class="text-xs text-gray-500">Real-time GPS routing active across all hubs.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-[#050A15] text-gray-400 pt-20 pb-10 border-t border-gray-800">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
+
+                <div class="lg:col-span-1">
+
+                    <div class="flex items-center mb-6">
+
+                        <div class="w-10 h-10 bg-brand-navy border border-gray-700 text-white rounded-lg flex items-center justify-center mr-3">
+
+                            <i class="fa-solid fa-droplet text-lg"></i>
+
+                        </div>
+
+                        <span class="font-bold text-2xl tracking-tight text-white">Hudini<span class="text-brand-accent font-light">Plumbing</span></span>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed mb-8 font-light text-gray-400">The trusted, premium, rapid-response plumbing and home service experts homeowners rely on when quality matters. Solving the real issue, cleanly and professionally.</p>
+
+                    <div class="flex space-x-4">
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Company</h4>
+
+                    <ul class="space-y-4 text-sm font-medium">
+
+                        <li><a href="#about" class="hover:text-white transition-colors">The Brand</a></li>
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+
+                        <li><a href="#hudinis-work" class="hover:text-white transition-colors">Our Work</a></li>
+
+                        <li><a href="#reviews" class="hover:text-white transition-colors">Customer Reviews</a></li>
+
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact & Booking</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Local Expertise</h4>
+
+                    <ul class="space-y-4 text-sm font-medium">
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Plumber in Sandton, Gauteng</a></li>
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Emergency Plumber Krugersdorp</a></li>
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Plumbing Services Pretoria</a></li>
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Plumbing Services Johannesburg</a></li>
+
+                        <li><a href="#services" class="hover:text-white transition-colors">Plumbing Repair Gauteng</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Dispatch Operations</h4>
+
+                    <ul class="space-y-5 text-sm font-medium">
+
+                        <li class="flex items-start">
+
+                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-brand-accent text-lg"></i>
+
+                            <span class="leading-relaxed">Serving the Entire<br>Gauteng Province</span>
+
+                        </li>
+
+                        <li class="flex items-center">
+
+                            <i class="fa-solid fa-phone mr-4 text-brand-accent text-lg"></i>
+
+                            <a href="tel:0800 123 456" class="hover:text-white transition-colors text-lg font-extrabold text-white">0800 123 456</a>
+
+                        </li>
+
+                        <li class="flex items-center text-gray-300">
+
+                            <i class="fa-solid fa-clock mr-4 text-brand-accent text-lg"></i>
+
+                            24/7 Emergency Service
+
+                        </li>
+
+                        <li class="flex items-center text-gray-300">
+
+                            <i class="fa-solid fa-shield mr-4 text-brand-accent text-lg"></i>
+
+                            Licensed & Insured
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-medium">
+
+                <p>© <span id="year"></span> Hudini Plumbing. All rights reserved.</p>
+
+                <div class="mt-4 md:mt-0 space-x-6">
+
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+
+        <div id="chat-window" class="hidden w-96 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-chat border border-gray-100 flex-col overflow-hidden opacity-0 translate-y-4 transition-all duration-300">
+
+            <div class="bg-brand-navy p-5 flex items-center justify-between text-white shadow-sm">
+
+                <div class="flex items-center space-x-3">
+
+                    <div class="relative w-10 h-10 bg-gradient-to-tr from-brand-accent to-brand-blue rounded-xl flex items-center justify-center border border-white/10 shadow-inner">
+
+                        <i class="fa-solid fa-wand-magic-sparkles text-white text-base"></i>
+
+                        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-brand-green rounded-full border-2 border-brand-navy"></span>
+
+                    </div>
+
+                    <div>
+
+                        <h4 class="font-bold text-sm tracking-wide">Sky</h4>
+
+                        <p class="text-[11px] text-gray-300 font-medium flex items-center">
+
+                            Hudini AI Architect • Online
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button id="close-chat" class="w-8 h-8 rounded-lg flex items-center justify-center bg-white/10 hover:bg-white/20 transition-colors text-white/80 hover:text-white">
+
+                    <i class="fa-solid fa-xmark text-sm"></i>
+
+                </button>
+
+            </div>
+
+            <div id="chat-messages" class="p-5 space-y-4 bg-brand-light text-sm overflow-y-auto max-h-[140px] custom-scrollbar">
+
+                <div class="flex items-start space-x-3 max-w-[85%]">
+
+                    <div class="w-7 h-7 bg-brand-blue text-white rounded-lg flex items-center justify-center shrink-0 font-bold text-[10px]">
+
+                        AI
+
+                    </div>
+
+                    <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none shadow-sm text-gray-800 font-normal leading-relaxed border border-gray-100">
+
+                        Hey! 👋 I'm Sky, Hudini's AI. We're here if you need anything!🧞‍♂️
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="px-5 py-3 bg-white border-t border-gray-100 flex flex-col space-y-2">
+
+                <button onclick="sendPreset('Emergency Booking 🚨')" class="w-full text-left px-4 py-2.5 bg-brand-light hover:bg-brand-navy hover:text-white text-xs font-semibold text-gray-700 rounded-xl border border-gray-200/60 transition-all">Emergency Booking 🚨</button>
+
+                <button onclick="sendPreset('Request Quote 💰')" class="w-full text-left px-4 py-2.5 bg-brand-light hover:bg-brand-navy hover:text-white text-xs font-semibold text-gray-700 rounded-xl border border-gray-200/60 transition-all">Request Quote 💰</button>
+
+                <button onclick="sendPreset('Solar Inquiry ☀️')" class="w-full text-left px-4 py-2.5 bg-brand-light hover:bg-brand-navy hover:text-white text-xs font-semibold text-gray-700 rounded-xl border border-gray-200/60 transition-all">Solar Inquiry ☀️</button>
+
+            </div>
+
+            <div class="p-4 bg-white border-t border-gray-100 flex items-center space-x-3">
+
+                <input type="text" id="chat-input" placeholder="Ask Sky about services, rates, availability..." class="flex-1 bg-brand-light px-4 py-3 rounded-xl text-xs outline-none border border-transparent focus:border-brand-accent/30 text-gray-800 transition-colors" autocomplete="off">
+
+                <button id="send-chat" class="w-10 h-10 bg-brand-navy text-white rounded-xl flex items-center justify-center shadow-md hover:bg-brand-blue transition-colors group shrink-0">
+
+                    <i class="fa-solid fa-paper-plane text-xs transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/27800123456" target="_blank" rel="noopener noreferrer" class="w-16 h-16 bg-brand-whatsapp text-white rounded-2xl flex items-center justify-center shadow-chat hover:bg-green-600 transition-all transform hover:-translate-y-1 group">
+
+            <i class="fa-brands fa-whatsapp text-3xl group-hover:scale-110 transition-transform"></i>
+
+        </a>
+
+        <button id="chat-trigger" class="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center shadow-chat hover:bg-brand-blue transition-all transform hover:-translate-y-1 group relative">
+
+            <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-brand-red rounded-full border-2 border-white animate-pulse"></span>
+
+            <i class="fa-solid fa-comments text-2xl group-hover:scale-110 transition-transform"></i>
+
+        </button>
+
+    </div>
+
+    <script>
+
+        // Set Year
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        
+
+        // Navbar Scroll Effect
+
+        window.addEventListener('scroll', () => {
+
+            const nav = document.getElementById('navbar');
+
+            const navContainer = document.getElementById('nav-container');
+
+            if (window.scrollY > 20) {
+
+                nav.classList.add('shadow-md');
+
+                navContainer.classList.replace('h-24', 'h-20');
+
+            } else {
+
+                nav.classList.remove('shadow-md');
+
+                navContainer.classList.replace('h-20', 'h-24');
+
+            }
+
+        });
+
+        // Mobile Menu Toggle
+
+        const btn = document.getElementById('mobile-menu-btn');
+
+        const menu = document.getElementById('mobile-menu');
+
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+
+            menu.classList.toggle('hidden');
+
+            if(menu.classList.contains('hidden')){
+
+                icon.classList.replace('fa-xmark', 'fa-bars');
+
+            } else {
+
+                icon.classList.replace('fa-bars', 'fa-xmark');
+
+            }
+
+        });
+
+        // Close mobile menu on click
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                menu.classList.add('hidden');
+
+                icon.classList.replace('fa-xmark', 'fa-bars');
+
+            });
+
+        });
+
+        // Scroll Reveal Animation (Intersection Observer)
+
+        const observerOptions = {
+
+            root: null,
+
+            rootMargin: '0px',
+
+            threshold: 0.1
+
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add('active');
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+
+            observer.observe(el);
+
+        });
+
+        // FAQ Accordion
+
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+
+            const button = item.querySelector('button');
+
+            const content = item.querySelector('.faq-content');
+
+            const icon = item.querySelector('i');
+
+            button.addEventListener('click', () => {
+
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all others
+
+                faqItems.forEach(otherItem => {
+
+                    otherItem.querySelector('.faq-content').classList.add('hidden');
+
+                    otherItem.querySelector('i').classList.remove('rotate-45', 'text-brand-red');
+
+                });
+
+                // Toggle current
+
+                if (!isOpen) {
+
+                    content.classList.remove('hidden');
+
+                    icon.classList.add('rotate-45', 'text-brand-red');
+
+                }
+
+            });
+
+        });
+
+        // Testimonial Carousel
+
+        const track = document.getElementById('testimonialCarousel');
+
+        const prevBtn = document.getElementById('prevBtn');
+
+        const nextBtn = document.getElementById('nextBtn');
+
+        let index = 0;
+
+        
+
+        // Function to determine cards per view based on screen width
+
+        const getCardsPerView = () => {
+
+            if (window.innerWidth >= 1024) return 3; // lg
+
+            if (window.innerWidth >= 768) return 2;  // md
+
+            return 1; // sm
+
+        };
+
+        
+
+        const updateCarousel = () => {
+
+            if(!track || track.children.length === 0) return;
+
+            const cards = track.children;
+
+            const totalCards = cards.length;
+
+            const cardsPerView = getCardsPerView();
+
+            // Prevent scrolling past the end
+
+            if (index > totalCards - cardsPerView) {
+
+                index = 0; // Loop back to start
+
+            }
+
+            if (index < 0) {
+
+                index = totalCards - cardsPerView;
+
+            }
+
+            // Calculate offset based on gap and width
+
+            const cardWidth = cards[0].offsetWidth;
+
+            // Tailwind gap values: gap-6 (1.5rem/24px) on small, md:gap-8 (2rem/32px) on medium+
+
+            const gap = window.innerWidth >= 768 ? 32 : 24;
+
+            const translateX = index * (cardWidth + gap);
+
+            track.style.transform = `translateX(-${translateX}px)`;
+
+        };
+
+        
+
+        if(nextBtn && prevBtn){
+
+            nextBtn.addEventListener('click', () => {
+
+                index++;
+
+                updateCarousel();
+
+                resetAutoPlay();
+
+            });
+
+            prevBtn.addEventListener('click', () => {
+
+                index--;
+
+                updateCarousel();
+
+                resetAutoPlay();
+
+            });
+
+        }
+
+        
+
+        // Recalculate on resize
+
+        window.addEventListener('resize', updateCarousel);
+
+        // Auto Carousel effect
+
+        let autoPlayInterval = setInterval(() => {
+
+            index++;
+
+            updateCarousel();
+
+        }, 6000);
+
+        function resetAutoPlay() {
+
+            clearInterval(autoPlayInterval);
+
+            autoPlayInterval = setInterval(() => {
+
+                index++;
+
+                updateCarousel();
+
+            }, 6000);
+
+        }
+
+        // Initialize carousel
+
+        setTimeout(updateCarousel, 100);
+
+        // Form Submit Prevent Default & Micro-interaction
+
+        document.getElementById('quoteForm').addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            const btn = e.target.querySelector('button[type="submit"]');
+
+            const originalText = btn.innerHTML;
+
+            btn.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i> Request Sent Successfully';
+
+            btn.classList.replace('bg-brand-navy', 'bg-brand-green');
+
+            btn.classList.replace('hover:bg-brand-blue', 'hover:bg-green-600');
+
+            setTimeout(() => {
+
+                btn.innerHTML = originalText;
+
+                btn.classList.replace('bg-brand-green', 'bg-brand-navy');
+
+                btn.classList.replace('hover:bg-green-600', 'hover:bg-brand-blue');
+
+                e.target.reset();
+
+            }, 4000);
+
+        });
+
+        /* Premium Chatbot Engine logic */
+
+        const chatTrigger = document.getElementById('chat-trigger');
+
+        const chatWindow = document.getElementById('chat-window');
+
+        const closeChat = document.getElementById('close-chat');
+
+        const chatInput = document.getElementById('chat-input');
+
+        const sendChat = document.getElementById('send-chat');
+
+        const chatMessages = document.getElementById('chat-messages');
+
+        
+
+        // Toggle Chat Window visibility smoothly
+
+        function toggleChat() {
+
+            if (chatWindow.classList.contains('hidden')) {
+
+                chatWindow.classList.remove('hidden');
+
+                chatWindow.classList.add('flex');
+
+                setTimeout(() => {
+
+                    chatWindow.classList.remove('opacity-0', 'translate-y-4');
+
+                }, 10);
+
+            } else {
+
+                chatWindow.classList.add('opacity-0', 'translate-y-4');
+
+                setTimeout(() => {
+
+                    chatWindow.classList.remove('flex');
+
+                    chatWindow.classList.add('hidden');
+
+                }, 300);
+
+            }
+
+        }
+
+        chatTrigger.addEventListener('click', toggleChat);
+
+        closeChat.addEventListener('click', toggleChat);
+
+        
+
+        // Append Message Utility
+
+        function appendMessage(text, type = 'user') {
+
+            const container = document.createElement('div');
+
+            container.className = type === 'user' ? 'flex items-start justify-end space-x-3 max-w-[85%] ml-auto' : 'flex items-start space-x-3 max-w-[85%]';
+
+            const avatarHtml = type === 'user'
+
+                ? ''
+
+                : `<div class="w-7 h-7 bg-brand-blue text-white rounded-lg flex items-center justify-center shrink-0 font-bold text-[10px]">AI</div>`;
+
+            const layoutHtml = type === 'user'
+
+                ? `<div class="bg-brand-navy text-white px-4 py-3 rounded-2xl rounded-tr-none shadow-sm font-normal leading-relaxed">${text}</div>`
+
+                : `<div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none shadow-sm text-gray-800 font-normal leading-relaxed border border-gray-100">${text}</div>`;
+
+            container.innerHTML = avatarHtml + layoutHtml;
+
+            chatMessages.appendChild(container);
+
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        }
+
+        
+
+        // Process message stream inputs
+
+        function handleUserMessage() {
+
+            const rawText = chatInput.value.trim();
+
+            if (!rawText) return;
+
+            appendMessage(rawText, 'user');
+
+            chatInput.value = '';
+
+            
+
+            // Premium AI Auto-Response simulation matching company pillars
+
+            setTimeout(() => {
+
+                let responseText = "Thank you for reaching out! Your query has been logged. For immediate priority dispatch or 24/7 emergencies across Gauteng, please call us directly at **0800 123 456**.";
+
+                const lowerText = rawText.toLowerCase();
+
+                if (lowerText.includes('solar')) {
+
+                    responseText = "Our certified solar engineering squad covers premium solar water heating installations. Would you like me to schedule an expert consultant to call you back?";
+
+                } else if (lowerText.includes('emergency') || lowerText.includes('leak') || lowerText.includes('burst')) {
+
+                    responseText = "🚨 **Priority Dispatch Alert:** If you have an active leak, please turn off your water main immediately. Our emergency response team can be at your door shortly. Call us at **0800 123 456** for instant booking!";
+
+                } else if (lowerText.includes('quote') || lowerText.includes('price')) {
+
+                    responseText = "We provide accurate diagnoses and clear, transparent estimates without hidden fees. Please leave your details via the custom quote form on our page or call our staff directly!";
+
+                }
+
+                appendMessage(responseText, 'bot');
+
+            }, 1000);
+
+        }
+
+        sendChat.addEventListener('click', handleUserMessage);
+
+        chatInput.addEventListener('keydown', (e) => {
+
+            if (e.key === 'Enter') handleUserMessage();
+
+        });
+
+        
+
+        // Trigger message via quick presets
+
+        function sendPreset(text) {
+
+            chatInput.value = text;
+
+            handleUserMessage();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
